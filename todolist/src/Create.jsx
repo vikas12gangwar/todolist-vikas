@@ -26,7 +26,7 @@ function Create ({fetchdata}){
 
     return(
         <div className='create'>
-        <input type="text" name="" id="" className='p-2 border-4 rounded-md border-black w-[500px] mr-1 ' placeholder='enter task' value={task} onChange={(e)=>setTask(e.target.value)} />
+        <input type="text" name="" id="" className='p-2 border-4 rounded-md border-black w-[300px] mr-1 ' placeholder='enter task' value={task} onChange={(e)=>setTask(e.target.value)} />
         <button className='bg-black text-white p-[10px] border-white rounded-md ' onClick={handleAdd}>Add</button>
         </div>
 
