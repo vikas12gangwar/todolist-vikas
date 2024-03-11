@@ -33,6 +33,8 @@ function Home(){
          
        const res= await axios.put("http://localhost:3001/put/"+id)
        setTodos(res?.data?.todosAll);
+        //    fetchData()
+
 
     
 
