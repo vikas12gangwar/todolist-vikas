@@ -20,7 +20,7 @@ function Home(){
    const handleDelete=async( id)=>{
     try {
          
-        await axios.delete("https://todolist-vikas.onrender.com/"+id)
+        await axios.delete("https://todolist-vikas.onrender.com/delete/"+id)
         fetchData()
         
     } catch (error) {
@@ -31,7 +31,7 @@ function Home(){
    const handleupdate=async(id)=>{
     try {
          
-       const res= await axios.put("http://localhost:3001/put/"+id)
+       const res= await axios.put("https://todolist-vikas.onrender.com/put/"+id)
        setTodos(res?.data?.todosAll);
         //    fetchData()
 
