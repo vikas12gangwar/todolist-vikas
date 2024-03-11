@@ -13,7 +13,7 @@ function Create ({fetchdata}){
             return
         }
 
-        axios.post("http://localhost:3001/add",{task:task})
+        axios.post("https://todolist-vikas.onrender.com/add",{task:task})
         .then(result=>{
             console.log(result)
             fetchdata()
