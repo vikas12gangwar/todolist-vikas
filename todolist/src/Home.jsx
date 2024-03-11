@@ -61,7 +61,7 @@ function Home(){
             :
             Todos.map(todo=>(
 
-                <div className=' flex w-[550px] justify-between bg-black text-white text-2xl border-white border-2 rounded-md p-1' key={todo._id}>
+                <div className=' flex w-[320px] justify-between bg-black text-white text-2xl border-white border-2 rounded-md p-1' key={todo._id}>
                     {!todo?.done?
                     (<Icon icon="ri:checkbox-blank-circle-line" onClick={()=>{handleupdate(todo._id)}}  className='cursor-pointer hover:"mark as done"'/>)
                     :
